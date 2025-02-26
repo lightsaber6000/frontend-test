@@ -1,0 +1,21 @@
+body {
+    color: var(--base-color);
+    font-family: var(--base-font);
+    &.is-blocked {
+        overflow: hidden;
+    }
+}
+
+.app {
+    padding-top: 48px;
+    padding-bottom: 24px;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.container {
+    max-width: 920px;
+    margin: 0 auto;
+    height: 100%;
+}
+

@@ -1,0 +1,13 @@
+@mixin font($alias, $name, $fontWeight) {
+    @font-face {
+      font-family: $alias;
+      src: url("../fonts/" + $name + ".woff2") format("woff2");
+      font-weight: $fontWeight;
+      font-style: normal;
+    }
+  }
+  
+  @include font("Interphases", "TTInterphasesProTrlVariable", 400);
+  @include font("Interphases", "TTInterphasesProTrl-Medium", 500);
+  
+  

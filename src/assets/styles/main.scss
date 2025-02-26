@@ -1,0 +1,63 @@
+@use './variables.scss';
+@use './fonts.scss';
+@use './layout.scss';
+
+@import '@/reset-css/reset.css';
+
+.modal-content {
+    &__text {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 23px;
+    }
+    &__button-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+    &__button {
+        flex-grow: 1;
+        &:hover:not(:disabled) {
+            background-color: var(--blue-accent-color);
+        }
+    }
+}
+
+
+
+
+.button {
+    box-shadow: none;
+    font-size: 14px;
+    line-height: 18px;
+    cursor: pointer;
+    font-family: var(--base-font);
+    transition: border-color var(--transition), background-color var(--transition);
+    border: 1px solid var(--gray3-color);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 9px 20px;
+    &:hover:not(:disabled) {
+        background-color: var(--lightblue-color);
+    }
+    &:focus-visible {
+        outline: auto;
+        outline-color: var(--blue-color);
+        outline-color: -webkit-focus-ring-color;
+    }
+}
+
+.button-icon {
+    background-color: transparent;
+    gap: 4px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0;
+    border: 0;
+    transition: color var(--transition);
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+}

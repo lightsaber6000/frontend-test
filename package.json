@@ -1,0 +1,22 @@
+{
+  "name": "world-test",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue2": "^2.3.3",
+    "reset-css": "^5.0.2",
+    "sass": "^1.85.0",
+    "v-click-outside": "^3.2.0",
+    "vite": "^6.1.1",
+    "vue": "^2.7.16"
+  }
+}
