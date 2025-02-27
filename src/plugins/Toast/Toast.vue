@@ -123,7 +123,9 @@
       line-height: 18px;
       color: var(--np-white);
       overflow: hidden;
-      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 5;
     }
 
     &__icon {
