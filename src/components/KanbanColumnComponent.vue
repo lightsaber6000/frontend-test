@@ -144,27 +144,6 @@
       margin: 4px 4px 4px 0;
       overflow-y: auto;
       flex-grow: 1;
-
-      &::-webkit-scrollbar {
-        width: 6px;
-      }
-
-      &::-webkit-scrollbar-track {
-        background: transparent;
-      }
-
-      &::-webkit-scrollbar-thumb {
-        background: var(--gray3-color);
-        border-radius: 10px;
-
-        &:hover {
-          background: #555;
-        }
-      }
-
-      &::-webkit-scrollbar-button {
-        display: none;
-      }
     }
 
     &__list {

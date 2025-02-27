@@ -151,7 +151,6 @@
     &__textarea {
         width: 100%;
         min-height: 52px;
-        overflow: hidden;
         box-sizing: border-box;
         border: 1px solid var(--gray-color);
         font-family: var(--base-font);
