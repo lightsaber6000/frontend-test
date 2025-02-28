@@ -144,7 +144,7 @@ export default {
     width: 100%;
     max-width: 500px;
     background-color: #fff;
-    padding: 24px 40px 40px 40px;
+    padding: 24px 30px 40px 40px;
   }
   &__header {
     display: flex;

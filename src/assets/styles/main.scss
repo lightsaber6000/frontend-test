@@ -9,6 +9,10 @@
         font-size: 14px;
         line-height: 18px;
         margin-bottom: 23px;
+        overflow-wrap: break-word;
+        max-height: 40vh;
+        overflow-y: auto;
+        padding-right: 10px;
     }
     &__button-list {
         display: grid;

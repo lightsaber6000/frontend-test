@@ -109,12 +109,15 @@
                     new: this.value.acceptedValue == null,
                 });
             },
-            onResizeTextarea(e) {
-                const textarea = e.target;
+            textareaAutosize() {
+                const textarea = this.$refs.textarea;
                 textarea.style.height = 'auto';
                 this.$nextTick(() => {
                     textarea.style.height = `${textarea.scrollHeight + 2}px`;
                 });
+            },
+            onResizeTextarea() {
+                this.textareaAutosize();
             },
             onMenuToggle() {
                 this.menuOpen = !this.menuOpen;
@@ -122,6 +125,7 @@
             onEdit() {
                 this.$emit('input', { ...this.value, readOnly: false });
                 this.$nextTick(() => {
+                    this.textareaAutosize();
                     this.focus();
                 });
             },
